@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LALAPEDEN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9321966ee0.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      function Display(){
+        document.getElementById("navlinks").style.display="block";
+        document.getElementById("closing_button").style.display="block";
+      }
+
+      function Close(){
+        document.getElementById("navlinks").style.display="none";
+        document.getElementById("closing_button").style.display="none";
+      }
+    </script>
+  </head>
+  <body>
+    <header class="menu">
+      <nav class="websitename">
+        <h1>LALAPEDEN</h1>
+      </nav>
+      <nav class="hamburger" id="hamburger" onclick="Display()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </nav>
+      <nav class="closing_button" id="closing_button" onclick="Close()">X</nav>
+      <nav class="navlinks" id="navlinks">
+        <ul>
+          <li>HOME</li>
+          <li><i class="fas fa-caret-down"></i> PAGES</li>
+          <li><i class="fas fa-caret-down"></i> DROPDOWN</li>
+          <li>LINK TEXT</li>
+          <li>LINK TEXT</li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="bannersec">
+      <div class="bannersec_text">
+        <h3>Donec feugiat faucibus massa</h3>
+        <h1>ULLAMCORPER<br>LIBERO ANTE IPSUM<br>VESTIBULUM</h1>
+        <p>Metus euismod non porta nec adipiscing a leo morbi viverra nulla sit amet<br>pharetra dictum lectus quam lobortis</p>
+        <button type="button" name="button">PORTTITOR</button>
+      </div>
+    </section>
+
+    <section class="sixcategories">
+      <div class="topintroline topintroline_bottom">
+        <h2>TELLUS SED INTERDUM</h2>
+        <p>Mauris nec tortor lectus vehicula leo quis elementum.</p>
+      </div>
+
+      <div class="three_structure redh">
+        <div class="one">
+          <h2><i class="fab fa-joomla"></i> ELEMENTUM</h2>
+          <p>Risus diam vel erat sed ligula nisl dictum quis tempus eu dictum sit amet tortor [...]</p>
+        </div>
+        <div class="two">
+          <h2><i class="fas fa-key"></i> PORTTITOR</h2>
+          <p>Nulla lacinia vulputate augue pellentesque mattis nibh ut metus aenean sit amet [...]</p>
+        </div>
+        <div class="three" id="first_red_three">
+          <h2><i class="fas fa-balance-scale"></i> HABITASSE</h2>
+          <p>Turpis non dui molestie auctor suspendisse lorem morbi commodo vulputate lorem [...]</p>
+        </div>
+      </div>
+
+      <div class="three_structure redh" id="three_structure_bottom">
+        <div class="one">
+          <h2><i class="fab fa-mixcloud"></i> SOLLICITUDIN</h2>
+          <p>Aenean porta vestibulum blandit pede pellentesque ac ipsum vel massa imperdiet [...]</p>
+        </div>
+        <div class="two">
+          <h2><i class="fas fa-bug"></i> FACILISIS</h2>
+          <p>Semper donec mi odio vehicula vel euismod vel suscipit at velit suspendisse lacinia [...]</p>
+        </div>
+        <div class="three">
+          <h2><i class="fab fa-mandalorian"></i> ADIPISCING</h2>
+          <p>In diam aenean erat orci mollis quis gravida sed mollis a quam nullam justo massa [...]</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider">
+      <img src="assets/100x100.png" alt="">
+      <p>imperdiet odio lorem euismod tellus proin commodo sollicitudin eros non lectus aliquam erat volutpat in molestie sed consectetuer sed<br>imperdiet facilisis urna vivamus aliquet commodo diam cras.</p>
+      <i class="fas fa-star slider_yellow"></i>
+      <i class="fas fa-star slider_yellow"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <h2>JEN DOE</h2>
+      <div class="slider_notation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </section>
+
+    <section class="threecategories">
+      <div class="topintroline topintroline_bottom">
+        <h2>LECTUS MOLESTIE PORTTITOR</h2>
+        <p>Donec accumsan ligula vitae magna mauris neque phasellus.</p>
+      </div>
+
+      <div class="three_structure greyh reda">
+        <div class="one icon_iconopp_bal">
+          <div class="icon_side">
+            <i class="fas fa-paste"></i>
+          </div>
+          <div class="icon_opp_side">
+            <h2>JUSTO PELLENTESQUE</h2>
+            <p>Quis iaculis scelerisque diam nisl pulvinar risus at fringilla sem augue in nulla [...]</p>
+            <a href="#">Read More >></a>
+          </div>
+        </div>
+        <div class="two icon_iconopp_bal">
+          <div class="icon_side">
+            <i class="fab fa-cloudversify"></i>
+          </div>
+          <div class="icon_opp_side">
+            <h2>ORCI VITAE VEHICULA</h2>
+            <p>Morbi semper metus ac pulvinar adipiscing dui justo gravida arcu et venenatis justo [...]</p>
+            <a href="#">Read More >></a>
+          </div>
+        </div>
+        <div class="three icon_iconopp_bal">
+          <div class="icon_side">
+            <i class="fas fa-stroopwafel"></i>
+          </div>
+          <div class="icon_opp_side">
+            <h2>AUCTOR LUCTUS DIAM</h2>
+            <p>Lacus ut nisi maecenas ultrices neque a nisl nunc lorem diam rhoncus aliquet sit [...]</p>
+            <a href="#">Read More >></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sixcategories">
+      <div class="topintroline topintroline_bottom">
+        <h2>VOLUTPAT MOLLIS VIVAMUS</h2>
+        <p>Pharetra libero non facilisis imperdiet mi augue feugiat.</p>
+      </div>
+
+      <div class="three_structure two_image greyh reda">
+
+        <div class="one commonflex">
+          <div class="image_side">
+            <img src="assets/320x240.png" alt="img">
+          </div>
+          <div class="text_side">
+            <h2>AMET SODALES TELLUS</h2>
+            <p>Nisl sit amet mollis enim velit posuere metus nam tempus odio in erat integer ante risus tempor quis ultrices quis [...]</p>
+            <a href="#">Read More >></a>
+          </div>
+        </div>
+
+        <div class="two commonflex">
+          <div class="image_side">
+            <img src="assets/320x240.png" alt="img">
+          </div>
+          <div class="text_side">
+            <h2>FRINGILLA NON AUGUE</h2>
+            <p>Et turpis morbi mi neque facilisis sollicitudin faucibus ac primis in faucibus orci luctus et ultrices posuere cubilia [...]</p>
+            <a href="#">Read More >></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer_containt">
+        <h1>LALAPEDEN</h1>
+        <p>Vivamus quis tellus eget quam elementum aliquam cras nibh mi adipiscing a sodales in tincidunt ut<br>enim praesent tempor molestie metus ut pretium odio.</p>
+        <div class="i_items">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fas fa-basketball-ball"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-google-plus-g"></i>
+          <i class="fab fa-whatsapp"></i>
+        </div>
+        <ul>
+          <li><i class="fas fa-home"></i></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">PRIVACY</a></li>
+          <li><a href="#">DISCLAIMER</a></li>
+          <li><a href="#">COOKIES</a></li>
+        </ul>
+      </div>
+
+      <div class="copyright">
+        <div><p>Copyright © 2016 - All Rights Reserved - Domain Name</p></div>
+        <div><p>Template by OS Templates</p></div>
+      </div>
+    </footer>
+  </body>
+</html>

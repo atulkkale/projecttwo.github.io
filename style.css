@@ -1,0 +1,606 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Navigation bar starts here */
+
+.closing_button{
+	display: none;
+	position: fixed;
+	z-index: 10;
+	right: 30px;
+	top: 20px;
+	cursor: pointer;
+}
+
+.menu{
+	display: flex;
+	justify-content: space-around;
+	padding: 30px;
+	border-top: 2px solid #e63e43;
+}
+
+.websitename h1{
+	color: #49494f;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.navlinks ul{
+	display: flex;
+	font-family: Arial;
+}
+
+.navlinks ul li{
+	padding: 0 9px;
+	font-size: 15px;
+	color: #49494f;
+	cursor: pointer;
+}
+
+.navlinks ul li:hover{
+		color: #e63e43;
+		transition: 0.2s;
+}
+
+.navlinks ul li:first-child{
+	color: #e63e43;
+}
+
+.navlinks ul i{
+	font-size: 10px;
+}
+
+.hamburger{
+	display: none;
+}
+
+/* Navigation bar ends here */
+/* Banner section start here */
+
+.bannersec{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(00, 0, 0, 0.5)), url("assets/backgrounds/01.png");
+	background-size: cover;
+	padding: 350px 0;
+	color: #fff;
+	justify-content: right;
+	position: relative;
+}
+
+.bannersec h3,.bannersec p{
+	font-family: Arial;
+}
+
+.bannersec_text{
+	position: absolute;
+	right: 15%;
+	top: 150px;
+}
+
+.bannersec_text h3{
+	font-size: 25px;
+}
+
+.bannersec_text h1{
+	font-size: 45px;
+	margin-top: 8%;
+	line-height: 1.3;
+}
+
+.bannersec_text p{
+	font-size: 14px;
+	margin-top: 8%;
+	line-height: 1.5;
+}
+
+.bannersec_text button{
+	position: absolute;
+	right: 0;
+	background-color: #e63e43;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	font-size: 15px;
+	padding: 12px 20px;
+	margin-top: 8%;
+	cursor: pointer;
+}
+
+/* Banner section ends here */
+/* Six categories section start here */
+
+.sixcategories{
+	padding: 70px 200px;
+	background-color: #f5f5f5;
+}
+
+.topintroline h2{
+	font-size: 22px;
+}
+
+.topintroline{
+	color: #49494f;
+}
+
+.topintroline p{
+	font-family: Arial;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.three_structure{
+	display: flex;
+	justify-content: space-between;
+}
+
+.three_structure h2{
+	font-size: 21px;
+}
+
+.three_structure h2 i{
+	color: #494949;
+	font-size: 30px;
+	margin-right: 7px;
+}
+
+.redh h2{
+	color: #e63e43;
+}
+
+.greyh h2{
+	color: #49494f;
+	font-size: 16px;
+}
+
+.reda a{
+	text-decoration: none;
+	font-family: Arial;
+	color: #e63e43;
+	font-size: 13px;
+}
+
+.three_structure p{
+	font-family: Arial;
+	font-size: 14px;
+	color: #49494f;
+	line-height: 1.5;
+	margin: 8% 0;
+}
+
+.one,.two,.three{
+	background-color: #fff;
+	flex-basis: 25%;
+	padding: 35px 30px;
+}
+
+.topintroline_bottom{
+	margin-bottom: 8%;
+}
+
+#first_red_three{
+	background-color: #e63e43;
+}
+
+#first_red_three h2,#first_red_three p{
+	color: #494949;
+}
+
+#three_structure_bottom{
+	margin-top: 3%;
+}
+
+/* Six categories section ends here */
+/* Slider section start here */
+
+.slider{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('assets/backgrounds/02.png');
+	text-align: center;
+	color: #fff;
+}
+
+.slider img{
+	border-radius: 60px;
+	margin-top: 6%;
+}
+
+.slider p{
+	font-family: Arial;
+	font-size: 15px;
+	margin-top: 3%;
+	line-height: 1.5;
+}
+
+.slider_yellow{
+	color: #d8ac48;
+}
+
+.slider i{
+	font-size: 12px;
+	margin-top: 2%;
+}
+
+.slider h2{
+	font-size: 24px;
+	margin-top: 2%;
+	padding-bottom: 5%;
+}
+
+.slider_notation{
+	padding-bottom: 6%;
+}
+
+.slider_notation span{
+	border: 1px solid #fff;
+	border-radius: 15px;
+	padding: 4px;
+	height: 1px;
+	width: 1px;
+	display: inline-block;
+	margin: 0 3px;
+	background-color: #fff;
+}
+
+.slider_notation span:last-child{
+	background-color: transparent;
+}
+
+/* Slider section ends here */
+/* threecategories section starts here */
+
+.threecategories{
+	padding: 70px 200px;
+}
+
+.icon_iconopp_bal{
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	flex-basis: 32%;
+}
+
+.icon_side i{
+	color: #e63e43;
+	border: 1px solid #ccc;
+	padding: 10px;
+	font-size: 35px;
+}
+
+.icon_side{
+	flex-basis: 32%;
+}
+
+.icon_opp_side{
+	flex-basis: 90%;
+}
+
+/* threecategories section ends here */
+/* Two image section starts here */
+
+.two_image div{
+	padding: 0;
+	background-color: #f5f5f5;
+}
+
+.commonflex{
+	display: flex;
+	justify-content: space-between;
+	flex-basis: 49%;
+}
+
+.image_side img{
+	height: 164px;
+	width: 220px;
+}
+
+.image_side{
+	flex-basis: 48%;
+}
+
+.text_side{
+	flex-basis: 48%;
+	margin-left: 10px;
+}
+
+/* Two image section ends here */
+/* Footer section start here */
+
+.footer_containt{
+	background-color: #272727;
+	text-align: center;
+	padding: 6% 0;
+	color: #fff;
+}
+
+.footer_containt h1{
+	font-size: 22px;
+}
+
+.footer_containt p{
+	font-family: Arial;
+	margin-top: 3%;
+	line-height: 1.6;
+	font-size: 14px;
+}
+
+.i_items{
+	margin-top: 3%;
+}
+
+.i_items i{
+	padding: 10px;
+	background-color: #e63e43;
+	color: #fff;
+	margin: 0 2px;
+	cursor: pointer;
+}
+
+.i_items i:first-child{
+	padding: 10px 14px;
+}
+
+.i_items i:last-child{
+	padding: 10px 14px;
+}
+
+.footer_containt ul{
+	font-family: Arial;
+	margin-top: 3%;
+	display: flex;
+	justify-content: center;
+	font-size: 15px;
+}
+
+.footer_containt ul li{
+	padding: 0 15px;
+	border-left: 1px solid #49494f;
+}
+
+.footer_containt ul li i{
+	cursor: pointer;
+}
+
+.footer_containt ul li:first-child{
+	border: none;
+}
+
+.footer_containt ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+/* Footer section ends here */
+/* Copywrite section starts here */
+
+.copyright{
+	background-color: #e63e43;
+	display: flex;
+	justify-content: space-around;
+	padding: 22px 25px;
+	color: #fff;
+	font-family: Arial;
+	font-size: 14px;
+}
+
+/* Copyright section ends here */
+
+/* Responsive stylesheet starts here */
+@media only screen and (max-width: 768px){
+
+/* navigation bar starts here */
+
+.navlinks{
+	position: fixed;
+	background-color: rgba(151,545,541,00.9);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.navlinks ul{
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.navlinks ul li{
+	padding-top: 35px;
+	font-size: 18px;
+}
+
+.hamburger{
+	display: block;
+}
+
+.line{
+	border: 1px solid #e63e43;
+	width: 15px;
+	margin-top: 4px;
+	cursor: pointer;
+}
+
+/* navigation bar ends here */
+/* Banner section starts here */
+
+.bannersec{
+	position: static;
+	padding: 40px 20px;
+}
+
+.bannersec_text{
+	position: static;
+}
+
+.bannersec_text h3{
+	font-size: 20px;
+}
+
+.bannersec_text h1{
+	font-size: 35px;
+	margin-top: 5%;
+}
+
+.bannersec_text p{
+	margin-top: 5%;
+}
+
+.bannersec_text button{
+	position: static;
+	margin-top: 15%;
+}
+
+/* Banner section ends here */
+/* sixcategories section starts here */
+
+.sixcategories{
+	padding: 40px 20px;
+}
+
+.three_structure{
+	flex-direction: column;
+}
+
+/* Sixcategories section ends here */
+/* Slider section starts here */
+
+.slider{
+	padding: 40px 20px;
+}
+
+.slider img{
+	margin-top: 10%;
+}
+
+.slider p{
+	margin-top: 10%;
+	line-height: 1.3;
+}
+
+.slider i,.slider h2{
+	margin-top: 6%;
+}
+
+.slider h2{
+	padding-bottom: 15%;
+}
+
+/* Slider section ends here */
+/* Threecategories section starts here */
+
+.threecategories{
+	padding: 40px 20px;
+}
+
+.greyh h2{
+	font-size: 18px;
+	margin-top: 15px;
+}
+
+.icon_side i{
+	margin-top: 20px;
+}
+
+.icon_iconopp_bal{
+	flex-direction: column;
+	text-align: center;
+}
+
+.three_structure p{
+	margin: 20px 0;
+}
+
+/* Threecategories section ends here */
+/* Two image section starts here */
+
+.commonflex{
+	flex-direction: column;
+}
+
+/* Two image section starts here */
+
+.two_image h2{
+	margin-top: 4%;
+}
+
+.two_image p{
+	margin: 4% 0;
+}
+
+.image_side{
+	margin-top: 8%;
+}
+
+/* Two image section ends here */
+/* Footer section starts here */
+
+.footer_containt{
+	padding: 40px 20px;
+}
+
+.footer_containt p{
+	margin-top: 10%;
+}
+
+.i_items{
+	margin-top: 10%;
+}
+
+.footer_containt ul{
+	margin-top: 10%;
+	flex-direction: column;
+}
+
+.footer_containt ul li{
+	border: none;
+	margin-top: 8px;
+}
+
+/* Footer section ends here */
+}
+/* Responsive stylesheet ends here */
